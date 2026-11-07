@@ -1,0 +1,82 @@
+@baseUrl = http://localhost:5112
+
+### ========================== PRODUCTS 
+### GET ALL PRODUCTS
+GET {{baseUrl}}/api/v1/products
+Accept: application/json
+
+### GET PRODUCT BY CODE
+GET {{baseUrl}}/api/v1/products/PR001
+Accept: application/json
+
+### CREATE NEW PRODUCT
+POST {{baseUrl}}/api/v1/products
+Content-Type: application/json
+
+{
+  "productCode": "PR003",
+  "name": "Laptop",
+  "price": 3500000,
+  "stock": 24,
+  "category": "Electronic"
+}
+
+### UPDATE PRODUCT
+PUT {{baseUrl}}/api/v1/products/PR003
+Accept: application/json
+Content-Type: application/json
+
+{
+  "productCode": "PR003",
+  "name": "Test",
+  "price": 3500000,
+  "stock": 24,
+  "category": "Electronic"
+}
+
+### DELETE PRODUCT
+DELETE {{baseUrl}}/api/v1/products/PR001
+Accept: application/json
+
+### ========================== CUSTOMERS 
+### GET ALL CUSTOMERS PRODUCTS
+GET {{baseUrl}}/api/v1/customers/products
+Accept: application/json
+
+### GET ALL CUSTOMERS
+GET {{baseUrl}}/api/v1/customers
+Accept: application/json
+
+### GET CUSTOMERS BY CODE
+GET {{baseUrl}}/api/v1/customers/PR001
+Accept: application/json
+
+### CREATE NEW CUSTOMERS
+POST {{baseUrl}}/api/v1/customers
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Laptop",
+  "price": 3500000,
+  "stock": 24,
+  "category": "Electronic"
+}
+
+### UPDATE CUSTOMERS
+PUT {{baseUrl}}/api/v1/customers/PR003
+Accept: application/json
+Content-Type: application/json
+
+{
+  "customerId": "PR003",
+  "name": "Test",
+  "price": 3500000,
+  "stock": 24,
+  "category": "Electronic"
+}
+
+### DELETE CUSTOMERS
+DELETE {{baseUrl}}/api/v1/customers/PR001
+Accept: application/json
+

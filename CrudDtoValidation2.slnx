@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CrudDtoValidation2/CrudDtoValidation2.csproj" />
+  </Folder>
+</Solution>
